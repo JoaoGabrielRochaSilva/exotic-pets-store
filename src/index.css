@@ -1,0 +1,96 @@
+/* ============================================================
+   index.css — Estilos globais da Exotic Pets Store
+   Tailwind CSS v3 + customizações globais
+   ============================================================ */
+
+/* ── Diretivas do Tailwind ── */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base global ── */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    /* Scroll suave para links âncora */
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-forest-950 text-forest-100 font-body antialiased;
+    /* Evita scroll horizontal em mobile */
+    overflow-x: hidden;
+  }
+
+  /* Tipografia padrão para elementos de texto */
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-white;
+  }
+
+  /* Garante que imagens não transbordem */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Remove estilo padrão do input type="search" no WebKit */
+  input[type='search']::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  /* Scroll da página — personalizado */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-forest-950;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-forest-700 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-forest-600;
+  }
+
+  /* Seleção de texto */
+  ::selection {
+    @apply bg-gold/30 text-white;
+  }
+}
+
+/* ── Utilitários customizados ── */
+@layer utilities {
+  /* Trunca texto em X linhas */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Gradiente de texto dourado */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #C9A227, #E8C547);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Container de página com padding padrão */
+  .page-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* ── Animações do Tailwind config ── */
+@layer components {
+  /* Garante que elementos com fill-gold preencham o ícone */
+  .fill-gold {
+    fill: #C9A227;
+  }
+}

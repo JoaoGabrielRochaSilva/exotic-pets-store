@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "nome": "Tarântula Rose Hair",
+    "categoria": "Aranhas",
+    "preco": 280.00,
+    "descricaoBreve": "A espécie mais recomendada para iniciantes. Temperamento dócil, beleza incomparável e longevidade excepcional.",
+    "descricaoCompleta": "A Grammostola rosea, popularmente conhecida como Rose Hair ou Tarântula-Rosada, é originária do Chile, Argentina e Bolívia. É considerada uma das tarântulas mais dóceis do mundo e a escolha perfeita para quem está começando no hobby. Sua envergadura pode atingir até 14 cm e as fêmeas podem viver mais de 20 anos. Alimenta-se de grilos, baratinhas e tenébrios duas vezes por semana. Requer terrário terrestre com substrato de 8-10 cm, esconderijo e pote d'água raso. Temperatura ideal: 22-28°C. Umidade: 40-50%. Manejo tranquilo, raramente usa pelos urticantes. Todos os exemplares possuem documentação SISPASS/IBAMA. Instruções detalhadas de cuidado acompanham o animal.",
+    "imagem": "/images/tarantula-rose-hair.jpg",
+    "estoque": 5,
+    "destaque": true
+  },
+  {
+    "id": 2,
+    "nome": "Tarântula Goliath Bird-Eater",
+    "categoria": "Aranhas",
+    "preco": 650.00,
+    "descricaoBreve": "A maior aranha do mundo por massa. Impressionante, robusta e com presença marcante em qualquer terrário.",
+    "descricaoCompleta": "A Theraphosa blondi, conhecida como Tarântula Golias ou Bird-Eater, é a maior aranha do mundo em termos de massa corporal, podendo atingir mais de 170 g e envergadura de 30 cm. Natural das florestas tropicais do norte da América do Sul, é uma espécie fascinante para colecionadores experientes. Alimenta-se de grilos, baratas-dubia, pinkies e até lagartos pequenos. Requer terrário úmido (70-80% de umidade), substrato profundo de 20 cm e temperatura entre 26-30°C. Defende-se com pelos urticantes — recomenda-se uso de luvas no manejo. Espécie para criadores com experiência em tarântulas. Acompanha documentação IBAMA e guia de cuidados.",
+    "imagem": "/images/tarantula-goliath.jpg",
+    "estoque": 3,
+    "destaque": false
+  },
+  {
+    "id": 3,
+    "nome": "Escorpião Imperador",
+    "categoria": "Escorpiões",
+    "preco": 320.00,
+    "descricaoBreve": "O maior escorpião do mundo. Veneno fraco, temperamento calmo e visual imponente tornam-o ideal para iniciantes.",
+    "descricaoCompleta": "O Pandinus imperator, conhecido como Escorpião Imperador, é a espécie de escorpião mais popular no mundo dos animais exóticos. Originário das florestas tropicais da África Ocidental e Central, pode atingir até 20 cm de comprimento. Seu veneno é comparável à picada de uma abelha — não representa risco para humanos saudáveis —, tornando-o surpreendentemente seguro para o manejo com luvas. Tem temperamento calmo e prefere se esconder a ferroar. Requer terrário de substrato úmido (60-70%), esconderijo obrigatório, temperatura entre 26-30°C e dieta à base de grilos e baratas. Vive em média 5-8 anos. Documentação CITES e IBAMA incluída.",
+    "imagem": "/images/escorpiao-imperador.jpg",
+    "estoque": 8,
+    "destaque": true
+  },
+  {
+    "id": 4,
+    "nome": "Escorpião da Floresta Negra",
+    "categoria": "Escorpiões",
+    "preco": 180.00,
+    "descricaoBreve": "Espécie elegante de coloração quase negra. Veneno de baixa toxicidade e fácil manutenção.",
+    "descricaoCompleta": "O Heterometrus spinifer, apelidado de Escorpião da Floresta Negra, é originário do sudeste asiático. Seu exoesqueleto é de um preto brilhante impressionante, especialmente sob luz UV, onde fluoresce em verde-azulado — um espetáculo visual único. Atingindo 10-12 cm, é um escorpião robusto com veneno de baixa toxicidade. Requer terrário úmido com substrato de terra e folhiço, temperatura de 27-30°C e umidade de 75-85%. Alimenta-se de grilos e baratas. Ideal para colecionadores que buscam uma espécie visualmente impressionante com manejo acessível. Acompanha guia detalhado de cuidados e documentação.",
+    "imagem": "/images/escorpiao-floresta.jpg",
+    "estoque": 6,
+    "destaque": false
+  },
+  {
+    "id": 5,
+    "nome": "Jiboia Arco-Íris",
+    "categoria": "Serpentes",
+    "preco": 1200.00,
+    "descricaoBreve": "A serpente mais bonita do Brasil. Suas escamas iridescentes criam um efeito de arco-íris único sob a luz.",
+    "descricaoCompleta": "A Epicrates cenchria, conhecida como Jiboia Arco-Íris ou Rainbow Boa, é uma das serpentes mais belas do mundo. Natural das florestas tropicais brasileiras, possui escamas que refletem a luz criando um deslumbrante efeito iridescente — como um arco-íris vivo. Boa constritora não venenosa, atinge entre 1,5 e 2 metros. Alimenta-se de camundongos e ratos pequenos a cada 10-14 dias. Requer terrário úmido (70-80%), temperatura gradiente de 26-30°C e substrato de terra vegetal. Manejo regular desde cedo resulta em animal dócil e confiante. Espécie nativa protegida — acompanha documentação IBAMA obrigatória e guia de cuidados completo.",
+    "imagem": "/images/jiboia-arco-iris.jpg",
+    "estoque": 4,
+    "destaque": true
+  },
+  {
+    "id": 6,
+    "nome": "Corn Snake",
+    "categoria": "Serpentes",
+    "preco": 380.00,
+    "descricaoBreve": "A cobra iniciante por excelência. Dócil, colorida, fácil de cuidar e com dezenas de morfas disponíveis.",
+    "descricaoCompleta": "A Pantherophis guttatus, popularmente chamada de Corn Snake ou Cobra do Milho, é a espécie de serpente mais recomendada para iniciantes no hobby. Originária do sudeste dos Estados Unidos, é completamente inofensiva, dócil e de fácil manejo desde cedo. Atinge 90-150 cm e vive entre 15-20 anos. Alimenta-se de camundongos pinkie e adultos a cada 5-7 dias (filhotes) ou 7-14 dias (adultos). Requer terrário com gradiente de temperatura (24°C frio / 30°C quente), esconderijo em ambos os lados e água fresca. Não necessita de luz UV. Espécie exótica não nativa — documentação de procedência inclusa.",
+    "imagem": "/images/corn-snake.jpg",
+    "estoque": 7,
+    "destaque": false
+  },
+  {
+    "id": 7,
+    "nome": "Python Real",
+    "categoria": "Serpentes",
+    "preco": 890.00,
+    "descricaoBreve": "A 'bola de futebol' do mundo reptiliano. Compacta, dócil e com centenas de morfas de coloração disponíveis.",
+    "descricaoCompleta": "A Python regius, chamada de Ball Python (Python Real), é a cobra mais popular do mundo no mercado de animais exóticos. Natural da África Subsaariana, é famosa por enrolar-se em forma de bola quando estressada — comportamento inofensivo e adorável. Atinge 1,2-1,5 m e vive mais de 30 anos em cativeiro. Alimenta-se de camundongos e ratos a cada 7-14 dias. Requer terrário com gradiente de temperatura (26°C frio / 32°C quente), caixa de umidade para ecdise (80-90% de umidade no esconderijo) e substrato de aparas de coco. Espécie exótica importada regularmente — acompanha documentação CITES e instruções de cuidado completas.",
+    "imagem": "/images/python-real.jpg",
+    "estoque": 5,
+    "destaque": true
+  },
+  {
+    "id": 8,
+    "nome": "Gecko Leopardo",
+    "categoria": "Lagartos",
+    "preco": 520.00,
+    "descricaoBreve": "O lagarto mais popular do mundo. Dócil, silencioso, não precisa de UV e tem padrões de coloração deslumbrantes.",
+    "descricaoCompleta": "A Eublepharis macularius, conhecida como Gecko Leopardo ou Leopard Gecko, é o réptil de estimação mais popular do mundo por razões óbvias: é completamente dócil, silencioso, não escapa facilmente e pode reconhecer seu tutor. Natural do Afeganistão, Paquistão e Índia, é uma espécie crepuscular e terrestre. Atinge 20-25 cm e vive mais de 20 anos. Alimenta-se de grilos e lagartas de tenébrio com suplementação de cálcio. Requer terrário com gradiente (26°C frio / 32°C quente com pedra de aquecimento), substrato de papel ou lousa e esconderijo. Não precisa de luz UV. Existe em dezenas de morfas de coloração.",
+    "imagem": "/images/gecko-leopardo.jpg",
+    "estoque": 9,
+    "destaque": true
+  },
+  {
+    "id": 9,
+    "nome": "Dragão Barbudo",
+    "categoria": "Lagartos",
+    "preco": 780.00,
+    "descricaoBreve": "O réptil com personalidade de cachorro. Extremamente dócil, reconhece tutores e adora interação humana.",
+    "descricaoCompleta": "O Pogona vitticeps, conhecido como Dragão Barbudo ou Bearded Dragon, é um dos répteis mais interativos e dóceis que existem — muitos tutores descrevem-o como 'um cão em corpo de lagarto'. Natural dos desertos e savanas australianas, atinge 45-60 cm. Come uma dieta variada de grilos, tenébrios e vegetais folhosos com suplementação de cálcio e vitaminas. Requer terrário espaçoso (mínimo 120x60x60 cm para adulto), lâmpada de UVB de alta potência e ponto de aquecimento a 40-45°C. Muito ativo durante o dia, adora ser pego no colo e pode agitar a cabeça em saudação. Ideal para famílias.",
+    "imagem": "/images/dragao-barbudo.jpg",
+    "estoque": 4,
+    "destaque": false
+  },
+  {
+    "id": 10,
+    "nome": "Camaleão do Iêmen",
+    "categoria": "Lagartos",
+    "preco": 1500.00,
+    "descricaoCompleta": "O Chamaeleo calyptratus, conhecido como Camaleão do Iêmen ou Veiled Chameleon, é a espécie de camaleão mais popular em cativeiro devido à sua robustez e adaptabilidade. Natural do Iêmen e da Arábia Saudita, os machos atingem 50-60 cm com crista cefálica impressionante. Muda de cor conforme humor e temperatura — um espetáculo natural. Alimenta-se de grilos, gafanhotos e locustas suplementados com cálcio e vitaminas, além de folhagem para beber gotículas de água. Requer gaiola de tela (ventilação), UVB de alta qualidade, temperatura de 26-35°C e nebulização 2x ao dia. Espécie para criadores com experiência em répteis.",
+    "descricaoBreve": "O mestre da camuflagem. Muda de cor conforme seu humor e é um dos animais mais fascinantes do reino réptil.",
+    "imagem": "/images/camaleon-iemen.jpg",
+    "estoque": 3,
+    "destaque": false
+  },
+  {
+    "id": 11,
+    "nome": "Sapo Pacman",
+    "categoria": "Anfíbios",
+    "preco": 220.00,
+    "descricaoBreve": "O anuro mais popular como pet. Glotão, sedentário e com expressão única — um bolinha de graça infinita.",
+    "descricaoCompleta": "O Ceratophrys ornata, chamado de Sapo Pacman devido à boca enorme e ao apetite voraz, é o anfíbio de estimação mais popular do mundo. Natural das pampas argentinas e uruguaias, atinge 12-15 cm e quase não se move — fica enterrado esperando a próxima refeição. Alimenta-se de grilos, tenébrios, minhocas e pinkies a cada 3-5 dias para jovens. Requer recipiente simples com substrato úmido (fibra de coco), temperatura de 24-28°C, umidade de 70-80% e troca de água frequente. Não precisa de luz especial. Existe em morfas de albino, verdadeiro, fantasia e muitas outras. Espécie fácil, ideal para apartamentos.",
+    "imagem": "/images/sapo-pacman.jpg",
+    "estoque": 10,
+    "destaque": false
+  },
+  {
+    "id": 12,
+    "nome": "Sapo Dendrobate",
+    "categoria": "Anfíbios",
+    "preco": 450.00,
+    "descricaoBreve": "As joias vivas do mundo anfíbio. Coloração deslumbrante, comportamento diurno e ideais para terrários naturais.",
+    "descricaoCompleta": "Os Dendrobates spp., conhecidos como Sapos Venenosos ou Poison Dart Frogs, são os anfíbios mais coloridos do mundo. Em cativeiro, alimentam-se de moscas drosófilas e pequenos grilos — e sem as toxinas da dieta selvagem, são completamente seguros ao toque. Atingem 2-4 cm e vivem 10-15 anos. São diurnos e ativos, tornando-os perfeitos para observação em terraristik. Requerem terrário paludário plantado, umidade de 80-100%, temperatura de 23-26°C e luz full spectrum para as plantas. Mantidos em casais ou grupos, exibem comportamento territorial e vocal fascinante. Acompanham documentação CITES e guia de cuidados especializado.",
+    "imagem": "/images/sapo-dendrobate.jpg",
+    "estoque": 6,
+    "destaque": false
+  }
+]
