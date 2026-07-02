@@ -1,135 +1,87 @@
 # 🦎 Exotic Pets Store
 
-E-commerce moderno de animais exóticos legalizados, desenvolvido com React + TypeScript + Vite + TailwindCSS.
-
-> **Projeto Final — Tecnologias para Interfaces de Aplicações Web**  
-> Prof. Dr. Ernani Viriato de Melo — IFTM  
+> **Projeto Final — Tecnologias para Interfaces de Aplicações Web**
+> Prof. Dr. Ernani Viriato de Melo — IFTM — Uberaba, MG
 > Entrega: 14/06/2026
 
 ---
 
-## 📋 Tabela de Requisitos × Implementação
+## 📖 Sobre o Projeto
 
-| Etapa | Requisito do PDF | Implementado em |
-|-------|-----------------|-----------------|
-| **1** | Tema de e-commerce definido | Exotic Pets Store — loja de animais exóticos |
-| **2** | Projeto em React | Vite + React 18 + TypeScript |
-| **2** | Página inicial (Home) | `src/pages/Home/Home.tsx` |
-| **2** | Catálogo de produtos/serviços | `src/pages/Catalog/Catalog.tsx` |
-| **2** | Página de detalhes de produto | `src/pages/ProductDetails/ProductDetails.tsx` |
-| **2** | Carrinho de compras | `src/pages/Cart/Cart.tsx` |
-| **2** | Página de Contato | `src/pages/Contact/Contact.tsx` |
-| **2** | Página Sobre | `src/pages/About/About.tsx` |
-| **2** | Componentes reutilizáveis | `src/components/` (Header, Footer, ProductCard, Button, etc.) |
-| **3** | Framework CSS escolhido | TailwindCSS v3 (`tailwind.config.js`) |
-| **3** | Design responsivo | Classes `sm:`, `md:`, `lg:` em todos os componentes |
-| **3** | Tema visual | Paleta verde-floresta + dourado + preto |
-| **4** | Arquivo JSON com produtos | `src/data/products.json` (12 produtos) |
-| **4** | Listagem dinâmica via JSON | `Catalog.tsx` importa e filtra `products.json` |
-| **4** | Filtro por categoria | `CategoryFilter` component + estado local |
-| **4** | Busca por nome/palavra-chave | `SearchBar` component + `useMemo` no Catalog |
-| **4** | Ordenação por preço/nome | `<select>` com Ordenacao type no Catalog |
-| **5** | Adicionar ao carrinho | `CartContext.tsx` → action `ADD_ITEM` |
-| **5** | Remover do carrinho | `CartContext.tsx` → action `REMOVE_ITEM` |
-| **5** | Atualizar quantidade | `CartContext.tsx` → action `UPDATE_QUANTITY` |
-| **5** | Limpar carrinho | `CartContext.tsx` → action `CLEAR_CART` |
-| **5** | Gerenciamento de estado | Context API + `useReducer` |
-| **5** | Persistência no LocalStorage | `useEffect` no `CartProvider` salva automaticamente |
-| **5** | Subtotal por item | `CartItem.tsx` — `preco × quantidade` |
-| **5** | Total de itens | `CartContext.tsx` — `totalItems` derivado |
-| **5** | Total geral | `CartContext.tsx` — `totalPrice` derivado |
-| **5** | Resumo do pedido | `Cart.tsx` — aside com resumo completo |
-| **6** | Página de detalhes dinâmica | `ProductDetails.tsx` com `useParams` (React Router) |
-| **6** | Animais relacionados | `ProductDetails.tsx` filtra mesma categoria |
-| **6** | Página Sobre (estática) | `About.tsx` — história, valores, equipe |
-| **6** | Página Política de Privacidade | `PrivacyPolicy.tsx` — texto completo com LGPD |
-| **6** | Deploy no GitHub Pages | `gh-pages` no `package.json` + instruções abaixo |
+A **Exotic Pets Store** é um e-commerce moderno desenvolvido como evolução direta do projeto **Animais Peçonhentos** — um site estático criado anteriormente na disciplina para apresentar informações sobre animais venenosos do Brasil, utilizando apenas HTML, CSS e JavaScript puro.
+
+### 🔄 De onde viemos: Animais Peçonhentos
+
+O projeto original **Animais Peçonhentos** era composto por:
+
+- Páginas HTML estáticas (`index.html`, `sobre.html`, `contato.html`)
+- Estilização com CSS puro e sem responsividade completa
+- JavaScript vanilla para interações básicas
+- Um arquivo `dados.json` com informações textuais dos animais
+- Imagens de tarântulas, escorpiões, cobras, sapos e outros animais, todas tiradas de bancos de imagens livres
+- Sem gerenciamento de estado, sem roteamento e sem componentização
+
+O conteúdo era puramente **informativo e educacional** — não havia loja, carrinho de compras nem catálogo interativo.
+
+### ⬆️ Para onde evoluímos: Exotic Pets Store
+
+A **Exotic Pets Store** reaproveitou todo o acervo de imagens do projeto Animais Peçonhentos e transformou a temática em uma **loja virtual completa** de animais exóticos legalizados. A mesma fauna que antes era apresentada como curiosidade científica agora é comercializada com preço, estoque, descrição detalhada e integração com carrinho de compras.
+
+| Aspecto | Animais Peçonhentos (original) | Exotic Pets Store (upgrade) |
+|---|---|---|
+| Tecnologia | HTML + CSS + JS puro | React + TypeScript + Vite |
+| Estilização | CSS manual | TailwindCSS com tema customizado |
+| Roteamento | Links entre arquivos `.html` | React Router DOM (SPA) |
+| Estado | Sem gerenciamento de estado | Context API + useReducer |
+| Dados | `dados.json` informativo | `products.json` com 12 produtos completos |
+| Imagens | Reaproveitadas do projeto original | As mesmas, renomeadas e organizadas |
+| Carrinho | Não existia | Completo, com LocalStorage |
+| Responsividade | Parcial | Mobile, tablet e desktop |
+| Páginas | 3 páginas estáticas | 7 páginas (Home, Catálogo, Produto, Carrinho, Sobre, Contato, Política) |
+| Deploy | Arquivos estáticos | GitHub Pages via `gh-pages` |
 
 ---
 
-## 🚀 Instalação e Execução Local
-
-### Pré-requisitos
-- Node.js 18+ instalado
-- npm 9+ ou yarn
-
-### Passos
+## 🚀 Como Executar
 
 ```bash
-# 1. Entre na pasta do projeto
-cd exotic-pets-store
-
-# 2. Instale as dependências
+# 1. Instale as dependências
 npm install
 
-# 3. Inicie o servidor de desenvolvimento
+# 2. Inicie o servidor de desenvolvimento
 npm run dev
+# → http://localhost:5173
 ```
 
-Acesse `http://localhost:5173` no navegador.
-
----
-
-## 🏗 Build para Produção
-
-```bash
-npm run build
-```
-
-O build gerado fica em `dist/`. Para visualizar localmente:
-
-```bash
-npm run preview
-```
+> ⚠️ **Não abra o `index.html` diretamente** nem use o Live Server do VS Code.
+> O projeto precisa do servidor Vite para funcionar. Use sempre `npm run dev`.
 
 ---
 
 ## 🌐 Deploy no GitHub Pages
 
-### Passo a passo completo
+**1.** Altere o `vite.config.ts` para refletir o nome do seu repositório:
 
-**1. Crie um repositório no GitHub**
-```
-Nome sugerido: exotic-pets-store
-```
-
-**2. Configure o `vite.config.ts`**
-
-Altere a propriedade `base` para o nome do seu repositório:
 ```ts
 export default defineConfig({
   plugins: [react()],
-  base: '/exotic-pets-store/',   // ← altere aqui
+  base: '/nome-do-seu-repositorio/',
 })
 ```
 
-**3. Inicialize o Git e suba o código**
-```bash
-git init
-git add .
-git commit -m "feat: Exotic Pets Store - Projeto Final TIAW"
-git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/exotic-pets-store.git
-git push -u origin main
-```
+**2.** Suba o código para o GitHub (via GitHub Desktop ou terminal).
 
-**4. Faça o deploy**
+**3.** Execute o deploy:
+
 ```bash
 npm run deploy
 ```
 
-Isso executa `npm run build` + `gh-pages -d dist`, publicando na branch `gh-pages`.
+**4.** Acesse **Settings → Pages** no repositório e configure:
+- Source: `Deploy from a branch`
+- Branch: `gh-pages` / `/ (root)`
 
-**5. Ative o GitHub Pages**
-- Vá em **Settings → Pages**
-- Em **Source**, selecione: `Deploy from a branch`
-- Branch: `gh-pages` / Folder: `/ (root)`
-- Clique em **Save**
-
-**6. Acesse o site**
-```
-https://SEU_USUARIO.github.io/exotic-pets-store/
-```
+**5.** Acesse: `https://seu-usuario.github.io/nome-do-repositorio/`
 
 ---
 
@@ -139,122 +91,102 @@ https://SEU_USUARIO.github.io/exotic-pets-store/
 exotic-pets-store/
 ├── public/
 │   ├── favicon.svg
-│   └── images/              ← Imagens dos produtos (reaproveitadas do projeto original)
-│       ├── hero-bg.jpg
-│       ├── tarantula-rose-hair.jpg
-│       └── ...
+│   └── images/              ← Imagens reaproveitadas do projeto Animais Peçonhentos
 ├── src/
 │   ├── components/
 │   │   ├── Button/          ← Botão reutilizável (5 variantes)
-│   │   ├── CartItem/        ← Item do carrinho com controles
-│   │   ├── CategoryFilter/  ← Filtro por categoria
-│   │   ├── Footer/          ← Rodapé
-│   │   ├── Header/          ← Cabeçalho com menu mobile
-│   │   ├── ProductCard/     ← Card de produto
-│   │   └── SearchBar/       ← Campo de busca
+│   │   ├── CartItem/        ← Item do carrinho com controles de quantidade
+│   │   ├── CategoryFilter/  ← Filtro por categoria com botões toggle
+│   │   ├── Footer/          ← Rodapé com links e redes sociais
+│   │   ├── Header/          ← Cabeçalho fixo com menu mobile e badge do carrinho
+│   │   ├── ProductCard/     ← Card de produto com hover e CTA
+│   │   └── SearchBar/       ← Campo de busca com ícone e botão limpar
 │   ├── contexts/
-│   │   └── CartContext.tsx  ← Estado global do carrinho
+│   │   └── CartContext.tsx  ← Estado global do carrinho (Context API + useReducer)
 │   ├── data/
-│   │   └── products.json    ← 12 produtos exóticos
+│   │   └── products.json    ← 12 produtos exóticos com todos os campos
 │   ├── pages/
-│   │   ├── About/
-│   │   ├── Cart/
-│   │   ├── Catalog/
-│   │   ├── Contact/
-│   │   ├── Home/
-│   │   ├── PrivacyPolicy/
-│   │   └── ProductDetails/
+│   │   ├── About/           ← História fictícia da loja, valores e equipe
+│   │   ├── Cart/            ← Carrinho completo com resumo do pedido
+│   │   ├── Catalog/         ← Catálogo com busca, filtro e ordenação
+│   │   ├── Contact/         ← Formulário com validação e estado de sucesso
+│   │   ├── Home/            ← Hero, features, destaques, categorias, depoimentos
+│   │   ├── PrivacyPolicy/   ← Política completa em conformidade com LGPD
+│   │   └── ProductDetails/  ← Página dinâmica via React Router + animais relacionados
 │   ├── types/
-│   │   └── Product.ts       ← Interfaces TypeScript
-│   ├── App.tsx              ← Roteamento com HashRouter
-│   ├── index.css            ← Tailwind + estilos globais
-│   └── main.tsx             ← Ponto de entrada
+│   │   └── Product.ts       ← Interfaces TypeScript (Product, CartItemType, etc.)
+│   ├── App.tsx              ← HashRouter + CartProvider + 7 rotas
+│   ├── index.css            ← Tailwind directives + scroll, scrollbar, seleção
+│   └── main.tsx             ← Ponto de entrada React
 ├── index.html
 ├── package.json
-├── tailwind.config.js
+├── tailwind.config.js       ← Paleta customizada: verde-floresta + dourado + preto
 ├── tsconfig.app.json
 └── vite.config.ts
 ```
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias
 
 | Tecnologia | Versão | Uso |
-|------------|--------|-----|
+|---|---|---|
 | React | 18.3 | Biblioteca principal de UI |
-| TypeScript | 5.5 | Tipagem estática |
-| Vite | 5.3 | Build tool e dev server |
-| TailwindCSS | 3.4 | Framework CSS responsivo |
-| React Router DOM | 6.24 | Roteamento SPA |
+| TypeScript | 5.5 | Tipagem estática em todos os componentes |
+| Vite | 5.3 | Build tool e servidor de desenvolvimento |
+| TailwindCSS | 3.4 | Framework CSS utilitário com tema customizado |
+| React Router DOM | 6.24 | Roteamento SPA com `HashRouter` |
 | React Icons | 5.2 | Ícones (FI, FA, GI, MD) |
-| gh-pages | 6.1 | Deploy no GitHub Pages |
-| Context API | nativa | Gerenciamento de estado do carrinho |
-| LocalStorage | nativa | Persistência do carrinho |
+| Context API | nativa React | Gerenciamento de estado do carrinho |
+| localStorage | nativa Web | Persistência do carrinho entre sessões |
+| gh-pages | 6.1 | Deploy automatizado no GitHub Pages |
 
 ---
 
-## 📦 Produtos disponíveis no JSON
+## 📦 Catálogo de Produtos
 
-| # | Nome | Categoria | Preço |
-|---|------|-----------|-------|
-| 1 | Tarântula Rose Hair | Aranhas | R$ 280,00 |
-| 2 | Tarântula Goliath Bird-Eater | Aranhas | R$ 650,00 |
-| 3 | Escorpião Imperador | Escorpiões | R$ 320,00 |
-| 4 | Escorpião da Floresta Negra | Escorpiões | R$ 180,00 |
-| 5 | Jiboia Arco-Íris | Serpentes | R$ 1.200,00 |
-| 6 | Corn Snake | Serpentes | R$ 380,00 |
-| 7 | Python Real | Serpentes | R$ 890,00 |
-| 8 | Gecko Leopardo | Lagartos | R$ 520,00 |
-| 9 | Dragão Barbudo | Lagartos | R$ 780,00 |
-| 10 | Camaleão do Iêmen | Lagartos | R$ 1.500,00 |
-| 11 | Sapo Pacman | Anfíbios | R$ 220,00 |
-| 12 | Sapo Dendrobate | Anfíbios | R$ 450,00 |
+Os 12 produtos do `products.json` são todos animais que já apareciam no projeto **Animais Peçonhentos**, agora com ficha comercial completa:
 
----
+| Animal | Categoria | Preço |
+|---|---|---|
+| Tarântula Rose Hair | Aranhas | R$ 280,00 |
+| Tarântula Goliath Bird-Eater | Aranhas | R$ 650,00 |
+| Escorpião Imperador | Escorpiões | R$ 320,00 |
+| Escorpião da Floresta Negra | Escorpiões | R$ 180,00 |
+| Jiboia Arco-Íris | Serpentes | R$ 1.200,00 |
+| Corn Snake | Serpentes | R$ 380,00 |
+| Python Real | Serpentes | R$ 890,00 |
+| Gecko Leopardo | Lagartos | R$ 520,00 |
+| Dragão Barbudo | Lagartos | R$ 780,00 |
+| Camaleão do Iêmen | Lagartos | R$ 1.500,00 |
+| Sapo Pacman | Anfíbios | R$ 220,00 |
+| Sapo Dendrobate | Anfíbios | R$ 450,00 |
 
-## 💡 Como o Código Foi Implementado
-
-### Carrinho de Compras (Context API + useReducer)
-O carrinho usa o padrão **Flux** com `useReducer`. O estado é um array de `CartItemType[]`.
-Toda alteração dispara um `dispatch` com a ação correspondente. O `useEffect` ouve as mudanças
-e persiste automaticamente no `localStorage`.
-
-### Catálogo Dinâmico
-O `Catalog.tsx` usa `useMemo` para recalcular a lista filtrada somente quando `search`,
-`categoria` ou `ordenacao` mudam — evitando re-renders desnecessários.
-
-### Roteamento
-Usa `HashRouter` em vez de `BrowserRouter` para garantir compatibilidade com GitHub Pages
-sem configuração adicional de servidor.
-
-### TypeScript
-Todos os componentes e contextos estão corretamente tipados. Nenhum `any` foi utilizado.
+Cada produto possui: `id`, `nome`, `categoria`, `preco`, `descricaoBreve`, `descricaoCompleta`, `imagem`, `estoque` e `destaque`.
 
 ---
 
-## ✅ Checklist do Projeto
+## 📋 Requisitos do Professor Atendidos
 
-- [x] React + TypeScript + Vite
-- [x] TailwindCSS com tema customizado
-- [x] Design responsivo (mobile / tablet / desktop)
-- [x] 7 páginas implementadas
-- [x] 7 componentes reutilizáveis
-- [x] JSON com 12 produtos
-- [x] Busca por nome e palavra-chave
-- [x] Filtro por 5 categorias
-- [x] Ordenação por preço e nome
-- [x] Carrinho com add / remove / update / clear
-- [x] Context API + useReducer
-- [x] Persistência no localStorage
-- [x] Resumo do pedido com subtotais
-- [x] Página de detalhes dinâmica com React Router
-- [x] Animais relacionados na página de detalhes
-- [x] Páginas estáticas: Sobre, Contato, Política de Privacidade
-- [x] Formulário de contato com validação
-- [x] Deploy configurado para GitHub Pages
-- [x] Imagens reaproveitadas do projeto original
+| Etapa | Requisito | Onde está |
+|---|---|---|
+| 1 | Tema de e-commerce | Exotic Pets Store — animais exóticos |
+| 2 | Projeto em React + estrutura de páginas | `src/pages/` — 7 páginas |
+| 2 | Componentes reutilizáveis | `src/components/` — 7 componentes |
+| 3 | TailwindCSS + design responsivo | `tailwind.config.js` + classes `sm:` `lg:` |
+| 3 | Tema visual coerente | Paleta verde-floresta + dourado + preto |
+| 4 | JSON com produtos | `src/data/products.json` |
+| 4 | Listagem dinâmica do JSON | `Catalog.tsx` com `useMemo` |
+| 4 | Filtro por categoria e busca | `CategoryFilter` + `SearchBar` |
+| 4 | Ordenação | Select com 5 opções no `Catalog.tsx` |
+| 5 | Adicionar / remover / atualizar no carrinho | `CartContext.tsx` — actions do reducer |
+| 5 | Gerenciamento de estado | Context API + `useReducer` |
+| 5 | Persistência | `localStorage` via `useEffect` |
+| 5 | Resumo do pedido | `Cart.tsx` — subtotais, total de itens, total geral |
+| 6 | Página de detalhes dinâmica | `ProductDetails.tsx` com `useParams` |
+| 6 | Páginas estáticas (Sobre, Contato, Privacidade) | `About`, `Contact`, `PrivacyPolicy` |
+| 6 | Deploy no GitHub Pages | `gh-pages` no `package.json` |
 
 ---
 
-*Projeto desenvolvido para a disciplina de Tecnologias para Interfaces de Aplicações Web — IFTM Uberaba.*
+*Desenvolvido para a disciplina de Tecnologias para Interfaces de Aplicações Web — IFTM Uberaba, 2026.*
